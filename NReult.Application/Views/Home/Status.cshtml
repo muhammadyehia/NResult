@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Status";
+}
+
+<h3> Inserted Customers Presentage <span id="status">@ViewBag.Status</span>%</h3>
+
+@section scripts
+{
+    <script>
+       (function() {
+
+            var getPresentage = function (data, status) {
+
+                $("#status").html(data);
+                if (data === "100") {
+                    clearInterval(intervalId);
+                }
+
+            }
+            var intervalId = setInterval(function() {
+                $.get("@Url.Action("GetPresentageStatus", "Home")", getPresentage
+                );
+            }, 2500);
+           
+
+        })();
+    </script>
+}

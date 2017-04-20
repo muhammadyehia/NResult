@@ -1,0 +1,310 @@
+﻿.xeno-table {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    border-radius: 4px;
+    padding: 2px;
+   
+}
+
+    .xeno-table .menu {
+        width: 100%;
+        background-color: #fff;
+        padding: 5px 10px;
+        color: #333;
+        font-size: 18px;
+        border-radius: 4px;
+        border: 1px solid #333;
+        min-height: 32px;
+    }
+
+
+
+html[dir="ltr"] .xeno-table .menu a,
+html[dir="ltr"] .xeno-table .menu select,
+html[dir="ltr"] .xeno-table .menu button {
+    background-color: transparent;
+    color: #333;
+    float: right;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+html[dir="rtl"] .xeno-table .menu a,
+html[dir="rtl"] .xeno-table .menu select,
+html[dir="rtl"] .xeno-table .menu button {
+    background-color: transparent;
+    color: #333;
+    float: left;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.xeno-table table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.xeno-table thead th {
+}
+
+.xeno-table tr input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+}
+
+    .xeno-table tr input[type=checkbox]:hover {
+        cursor: pointer;
+    }
+
+.xeno-table thead tr {
+}
+
+    .xeno-table thead tr:hover {
+    }
+
+    .xeno-table thead tr input[type=text] {
+        background-color: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        color: #555555;
+        display: block;
+        height: 34px;
+        line-height: 1.42857;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+        vertical-align: middle;
+        width: 100%;
+        min-width: 10px;
+    }
+
+    .xeno-table thead tr select {
+        background-color: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        color: #555555;
+        display: block;
+        padding: 6px 0;
+        line-height: 1.42857;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+        .xeno-table thead tr select option {
+            vertical-align: middle;
+        }
+
+    .xeno-table thead tr input[type=text]:focus {
+        border-color: #66AFE9;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+        outline: 0 none;
+    }
+
+    .xeno-table thead tr input[disabled] {
+        background-color: #EEEEEE;
+        cursor: not-allowed;
+    }
+
+    .xeno-table thead tr a.xeno-sort-btn,
+    .xeno-table thead tr button.xeno-sort-btn {
+        -moz-user-select: none;
+        border: 1px solid rgba(0, 0, 0, 0);
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.42857;
+        margin-bottom: 0;
+        padding: 6px 0px;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        background-color: #FFFFFF;
+        border-color: #CCCCCC;
+        color: #333333;
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    .xeno-table thead tr a:hover.xeno-sort-btn,
+    .xeno-table thead tr button:hover.xeno-sort-btn {
+        background-color: #EBEBEB;
+        border-color: #ADADAD;
+        color: #333333;
+        text-decoration: none;
+    }
+
+.xeno-table a.filter,
+.xeno-table button.filter {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 0;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+
+.xeno-table thead tr a.xeno-sort-btn,
+.xeno-table thead tr button.xeno-sort-btn {
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #333;
+    min-width: 30px;
+}
+
+    .xeno-table thead tr a.xeno-sort-btn:hover,
+    .xeno-table thead tr button.xeno-sort-btn:hover {
+        background-color: #000;
+        border-color: #000;
+        color: #FFFFFF;
+    }
+
+.xeno-table tbody {
+    max-height: 200px;
+    overflow: auto;
+}
+
+    .xeno-table tbody tr {
+        border: 1px solid #f5f5f5;
+    }
+
+        .xeno-table tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .xeno-table tbody tr td {
+        }
+
+        .xeno-table tbody tr.minified-row {
+            display: none;
+        }
+
+.xeno-table tfoot tr {
+    /*background-color: #333;*/
+    border-top: 1px solid #F5F5F5;
+}
+
+.xeno-table .caret-descending {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #DDDDDD;
+    display: inline-block;
+    height: 0;
+    vertical-align: middle;
+    width: 0;
+    margin-left: 5px;
+}
+
+.xeno-table .caret-ascending {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #DDDDDD;
+    display: inline-block;
+    height: 0;
+    vertical-align: middle;
+    width: 0;
+    margin-left: 5px;
+}
+
+.xeno-table .template {
+    color: #333333;
+}
+
+.xeno-table .loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1020;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+
+    .xeno-table .loader i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 100px;
+        width: 100px;
+        background-repeat: no-repeat;
+        background-image: url('../../Images/loader.gif');
+        margin-left: -50px; /* -1 * image width / 2 */
+        margin-top: -50px; /* -1 * image height / 2 */
+        display: block;
+    }
+
+.xeno-pager {
+    padding: 5px 5px;
+}
+
+    .xeno-pager li {
+        float: left;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .xeno-pager li.records {
+            float: right;
+            margin: 0;
+            color: #333;
+            font-weight: bold;
+        }
+
+    .xeno-pager select.pager-list {
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        color: #333;
+        height: 24px;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    }
+
+    .xeno-pager li a {
+        background: -moz-linear-gradient(center top, #FFFFFF 0%, #EFEFEF 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        border: 1px solid #BBBBBB;
+        border-radius: 3px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        color: #666666;
+        float: left;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 24px;
+        margin: 0 5px 0 0;
+        min-width: 14px;
+        padding: 0 7px;
+        text-align: center;
+    }
+
+        .xeno-pager li a:hover {
+            cursor: pointer;
+            text-decoration: none;
+            background: -moz-linear-gradient(center top, #f5f5f5 0%, #EFEFEF 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        }
+
+    .xeno-pager li.active {
+    }
+
+    .xeno-pager li a.active {
+        background: none repeat scroll 0 0 #333;
+        border-color: #285E8E;
+        box-shadow: 0 1px 0 #FFFFFF, 0 0 2px rgba(0, 0, 0, 0.3) inset;
+        color: #FFFFFF;
+        cursor: default;
+    }

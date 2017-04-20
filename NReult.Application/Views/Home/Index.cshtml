@@ -1,0 +1,25 @@
+﻿
+<button type="button" id="Clear" class="btn btn-danger">Remove Data</button>
+
+<div id="TableContainer">
+</div>
+
+@section scripts
+{
+    <script>
+       (function() {
+
+           $("#Clear").click(function (event) {
+              
+               $.get("@Url.Action("ClearData", "Home")", function(data) {
+                   location.reload();
+               }
+                );
+           });
+       
+   
+       
+
+        })();
+    </script>
+}
